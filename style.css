@@ -1,0 +1,70 @@
+body{
+
+    font-family: Roboto;
+}
+
+.container{
+
+    background-color: #8E0E00;
+    border-radius: 10px;
+}
+
+.main-area{
+    background-color: tomato;
+    width: 700px;
+    /* height: 630px; */
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    
+}
+
+.calculate-area{
+
+    padding-left: 50px;
+}
+
+h3{
+    
+    background-color: #1F030C;
+    color: white;
+    padding: 10px 0;
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+h5{
+
+    padding: 10px 0;
+    text-align: center;
+    font-size: 30px;
+}
+
+.form-control{
+
+    width: 85%;
+}
+
+#item-select{
+
+    font-size: 25px;
+}
+#calculate{
+    margin-left: 150px;
+    margin-bottom: 10px;
+}
+
+h2{
+    margin-top: 20px;
+    display: none;
+    font-size: 25px;
+    color: #1F030C;
+    line-height: 55%;
+}
+p{
+    display: none;
+    font-size: 20px;
+}

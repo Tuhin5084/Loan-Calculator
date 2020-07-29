@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Loan Calculator</title>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+
+        <div class="container d-flex justify-content-center align-items-center">
+
+            <div class="main-area">
+
+                <h3 class="text-center">loan Calculator</h3>
+
+                <div class="calculate-area">
+
+                    <h5>Loan Amount </h5>
+
+                    <input id="loanAmount" type="text" placeholder="Enter Loan Amount" class="form-control">
+
+                    <h5>Interest Rate % </h5>
+
+                    <input id="interestRate" type="number" placeholder="Enter Interest Rate In Percentage" class="form-control" min="1" max="500">
+
+                    <h5>Months To Pay </h5>
+
+                    <input id="noOfMonth" type="number" placeholder="Enter No Of Months To Pay Loan(1 Year = 12 Months)" class="form-control" min="1" max="200">
+
+                    <button id="calculate" class="btn btn-dark mt-4 text-center">CalCulate</button>
+                    
+
+                    <!-- New Are For Result -->
+
+                    <p id="description">Description:-  Total Loan : <span id="loan"></span> ,  Interest Rate : <span id="interestValue"></span> ,  Months To Pay : <span id="month"></span> </p>
+                    
+                    <h2 id="interest">Total Interest : <span id="interestMoney"></span></h2>
+                    <h2 id="perMonthInterest">Per Month Interest : <span id="perMonthInterestMoney"></span></h2>
+                    <h2 id="totalPay">Total Payable Money With Interest : <span id="totalPayMoney"></span> </h2>
+                    <h2 id="perMonth">Per Month Pay With Interest : <span id="perMonthMoney"></span> </h2>
+                    
+                </div>
+            </div>
+        </div>
+
+     <script src="loan.js"></script>
+        
+    </body>
+
+</html>
