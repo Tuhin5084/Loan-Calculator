@@ -32,23 +32,42 @@ document.getElementById('calculate').addEventListener('click', function(){
 
         const perMonthPayable = parseFloat((totalPayableMoney / noOfMonthTotalInt).toFixed(2));
 
-        document.getElementById('description').style.display = 'block';
+        // document.getElementById('description').style.display = 'block';
+        // document.getElementById('interest').style.display = 'block';
+        // document.getElementById('perMonthInterest').style.display = 'block';
+        // document.getElementById('totalPay').style.display = 'block';
+        // document.getElementById('').style.display = 'block';
+        displayBlock('description');
+        displayBlock('interest');
+        displayBlock('perMonthInterest');
+        displayBlock('totalPay');
+        displayBlock('perMonth')
 
-        document.getElementById('interest').style.display = 'block';
-        document.getElementById('perMonthInterest').style.display = 'block';
-        document.getElementById('totalPay').style.display = 'block';
-        document.getElementById('perMonth').style.display = 'block';
-
-        document.getElementById('loan').innerText = loanAmountTotalInt + ' Tk';
-        document.getElementById('interestValue').innerText = interestRateInt + ' %';
-        document.getElementById('month').innerText = noOfMonthTotalInt + ' Months';
-        document.getElementById('interestMoney').innerText = totalInterest + ' Tk';
-        document.getElementById('perMonthInterestMoney').innerText = perMonthInterest + ' Tk';
-        document.getElementById('totalPayMoney').innerText = totalPayableMoney + ' Tk';
-        document.getElementById('perMonthMoney').innerText = perMonthPayable + ' Tk';
+        displayResult('loan', loanAmountTotalInt);
+        displayResult('interestValue', interestRateInt);
+        displayResult('month', noOfMonthTotalInt);
+        displayResult('interestMoney', totalInterest);
+        displayResult('perMonthInterestMoney', perMonthInterest);
+        displayResult('totalPayMoney', totalPayableMoney);
+        displayResult('perMonthMoney', perMonthPayable);
+        // document.getElementById('loan').innerText = loanAmountTotalInt + ' Tk';
+        // document.getElementById('interestValue').innerText = interestRateInt + ' %';
+        // document.getElementById('month').innerText = noOfMonthTotalInt + ' Months';
+        // document.getElementById('interestMoney').innerText = totalInterest + ' Tk';
+        // document.getElementById('perMonthInterestMoney').innerText = perMonthInterest + ' Tk';
+        // document.getElementById('totalPayMoney').innerText = totalPayableMoney + ' Tk';
+        // document.getElementById('perMonthMoney').innerText = perMonthPayable + ' Tk';
         
         loan.value = "";
         interest.value = "";
         month.value = "";
     }
 })
+
+function displayBlock(id){
+    document.getElementById(id).style.display = 'block';
+}
+
+function displayResult(id, value){
+    document.getElementById(id).innerText = value;
+}
